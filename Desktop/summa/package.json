@@ -1,0 +1,21 @@
+{
+	"name": "pdp-summa",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "npm package",
+	"main": "src/index.js",
+	"files": [
+		"src"
+	],
+	"scripts": {
+		"start": "node ./index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"summa",
+		"pdp",
+		"java"
+	],
+	"author": "Jahongir",
+	"license": "MIT"
+}
