@@ -1,0 +1,14 @@
+{"level":"info","message":"Listening on port 4000...","timestamp":"2024-01-14T17:43:02.523Z"}
+{"level":"info","message":"Connected to mongodb+srv://pdp-admin:VSgTaQv9Z!T.-6s@pdp.kb99ove.mongodb.net/movies...","timestamp":"2024-01-14T17:43:04.995Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2024-01-15T05:58:12.561Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movies...","timestamp":"2024-01-15T05:58:12.571Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2024-01-16T09:06:07.054Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movies...","timestamp":"2024-01-16T09:06:07.073Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2024-01-21T06:32:03.024Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movies...","timestamp":"2024-01-21T06:32:03.037Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2024-01-22T06:53:12.265Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movies...","timestamp":"2024-01-22T06:53:12.314Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2024-01-22T12:40:59.500Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movies...","timestamp":"2024-01-22T12:40:59.564Z"}
+{"level":"info","message":"Listening on port 4000...","timestamp":"2024-01-28T08:04:19.484Z"}
+{"level":"info","message":"Connected to mongodb://localhost/movies...","timestamp":"2024-01-28T08:04:20.255Z"}
