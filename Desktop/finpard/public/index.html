@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="../images/contact-block-bg.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="../dist/pages/index.css" />
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+			crossorigin="anonymous"
+			defer
+		></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+			rel="stylesheet"
+			crossorigin="anonymous"
+		/>
+		<title>Finpard</title>
+	</head>
+	<body>
+		<div class="topbar">
+			<!-- start navbar -->
+			<nav class="bg-white md:w-screen py-4">
+				<div class="navbar container flex items-center justify-between  mx-auto px-3">
+					<!-- Logo and Catalog Button -->
+					<div class="category flex md:flex-row flex-col gap-3 md:items-center md:gap-5">
+						<a href="#" class="md:flex items-center block">
+							<img src="../images/Frame 1171276127.svg" class="h-8 logo" alt="Flowbite Logo" />
+						</a>
+						<button class="btn1 hidden items-center justify-center text-white gap-3 md:flex">
+							<img src="../images/Vector.png" alt="" class="hambur" />
+							Каталог
+						</button>
+						<div class="input h-10 flex items-center gap-4">
+							<img src="../images/search.png" alt="" />
+							<input class="max-w-md" type="text" placeholder="Поиск по каталогу" />
+						</div>
+					</div>
+					<!-- Phone number -->
+					<a
+						href="#"
+						class="md:block py-2 px-3 text-gray-900 rounded md:border-0 md:p-0 link hidden"
+					>
+						+998 90 000 11 00
+					</a>
+					<!-- Language -->
+					<div class="connect md:block flex items-center gap-5">
+						<a href="# " class="md:hidden block">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M1.5 4.5C1.5 3.70435 1.81607 2.94129 2.37868 2.37868C2.94129 1.81607 3.70435 1.5 4.5 1.5H5.872C6.732 1.5 7.482 2.086 7.691 2.92L8.796 7.343C8.88554 7.701 8.86746 8.07746 8.74401 8.42522C8.62055 8.77299 8.39723 9.07659 8.102 9.298L6.809 10.268C6.674 10.369 6.645 10.517 6.683 10.62C7.24738 12.1549 8.1386 13.5487 9.29495 14.7051C10.4513 15.8614 11.8451 16.7526 13.38 17.317C13.483 17.355 13.63 17.326 13.732 17.191L14.702 15.898C14.9234 15.6028 15.227 15.3794 15.5748 15.256C15.9225 15.1325 16.299 15.1145 16.657 15.204L21.08 16.309C21.914 16.518 22.5 17.268 22.5 18.129V19.5C22.5 20.2956 22.1839 21.0587 21.6213 21.6213C21.0587 22.1839 20.2956 22.5 19.5 22.5H17.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+									fill="#AFAFAF"
+								/>
+							</svg>
+						</a>
+						<a href="#" class="btn border-1">Ру</a>
+					</div>
+					<!-- Login -->
+					<a
+						href="#"
+						class="link hidden md:flex py-2 px-3 text-gray-900 rounded md:border-0 md:p-0 flex items-center gap-2"
+					>
+						<span
+							><svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M17.982 18.7249C17.2833 17.7998 16.3793 17.0496 15.3412 16.5333C14.3031 16.0171 13.1594 15.7489 12 15.7499C10.8407 15.7489 9.6969 16.0171 8.65883 16.5333C7.62077 17.0496 6.71675 17.7998 6.01801 18.7249M17.982 18.7249C19.3455 17.5121 20.3071 15.9135 20.7412 14.141C21.1753 12.3686 21.0603 10.506 20.4115 8.80043C19.7627 7.09482 18.6107 5.62673 17.1084 4.59085C15.6061 3.55497 13.8244 3.00024 11.9995 3.00024C10.1747 3.00024 8.39295 3.55497 6.89062 4.59085C5.38829 5.62673 4.23634 7.09482 3.58755 8.80043C2.93875 10.506 2.82376 12.3686 3.25783 14.141C3.6919 15.9135 4.65451 17.5121 6.01801 18.7249M17.982 18.7249C16.336 20.1931 14.2056 21.0031 12 20.9999C9.79404 21.0033 7.66425 20.1934 6.01801 18.7249M15 9.74995C15 10.5456 14.6839 11.3087 14.1213 11.8713C13.5587 12.4339 12.7957 12.7499 12 12.7499C11.2044 12.7499 10.4413 12.4339 9.87869 11.8713C9.31608 11.3087 9.00001 10.5456 9.00001 9.74995C9.00001 8.9543 9.31608 8.19124 9.87869 7.62863C10.4413 7.06602 11.2044 6.74995 12 6.74995C12.7957 6.74995 13.5587 7.06602 14.1213 7.62863C14.6839 8.19124 15 8.9543 15 9.74995Z"
+									stroke="#222222"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</span>
+						Войти
+					</a>
+					<!-- Basket -->
+					<a
+						href="#"
+						class="link hidden py-2 px-3 text-gray-900 rounded md:border-0 md:p-0 md:flex items-center gap-2"
+					>
+						<span
+							><svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M2.25 3H3.636C4.146 3 4.591 3.343 4.723 3.835L5.106 5.272M5.106 5.272C10.6766 5.11589 16.2419 5.73515 21.642 7.112C20.818 9.566 19.839 11.95 18.718 14.25H7.5M5.106 5.272L7.5 14.25M7.5 14.25C6.70435 14.25 5.94129 14.5661 5.37868 15.1287C4.81607 15.6913 4.5 16.4544 4.5 17.25H20.25M6 20.25C6 20.4489 5.92098 20.6397 5.78033 20.7803C5.63968 20.921 5.44891 21 5.25 21C5.05109 21 4.86032 20.921 4.71967 20.7803C4.57902 20.6397 4.5 20.4489 4.5 20.25C4.5 20.0511 4.57902 19.8603 4.71967 19.7197C4.86032 19.579 5.05109 19.5 5.25 19.5C5.44891 19.5 5.63968 19.579 5.78033 19.7197C5.92098 19.8603 6 20.0511 6 20.25ZM18.75 20.25C18.75 20.4489 18.671 20.6397 18.5303 20.7803C18.3897 20.921 18.1989 21 18 21C17.8011 21 17.6103 20.921 17.4697 20.7803C17.329 20.6397 17.25 20.4489 17.25 20.25C17.25 20.0511 17.329 19.8603 17.4697 19.7197C17.6103 19.579 17.8011 19.5 18 19.5C18.1989 19.5 18.3897 19.579 18.5303 19.7197C18.671 19.8603 18.75 20.0511 18.75 20.25Z"
+									stroke="#222222"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg> </span
+						>Корзина
+					</a>
+				</div>
+			</nav>
+			<!-- finish navbar  -->
+			<!-- start header  -->
+			<div class="container mx-auto header md:block bg-white">
+				<div
+					class="slide swiffy-slider slider-nav-visible slider-nav-touch slider-indicators-round slider-indicators-highlight slider-indicators-sm slider-indicators-dark"
+				>
+					<ul class="slider-container">
+						<li>
+							<div id="slide1">
+								<img class="header_img" src="../images/Rectangle 431.png" alt="" />
+							</div>
+						</li>
+						<li>
+							<div id="slide2">
+								<img class="header_img" src="../images/Rectangle 431.png" alt="" />
+							</div>
+						</li>
+						<li>
+							<div id="slide3">
+								<img class="header_img" src="../images/Rectangle 431.png" alt="" />
+							</div>
+						</li>
+					</ul>
+					<ul class="slider-indicators">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<!-- start button group -->
+				<div class="flex justify-center py-5 gap-5 btn_group overflow-scroll">
+					<button>Кольца</button>
+					<button>Серьги</button>
+					<button>Категория-3</button>
+					<button>Категория-4</button>
+				</div>
+				<!-- finish button group -->
+			</div>
+		</div>
+
+		<!-- finish header  -->
+
+		<!-- start first section rings -->
+
+		<div class="container mx-auto first_section">
+			<!-- title -->
+
+			<div class="title">
+				<h1>Кольца</h1>
+			</div>
+			<!-- rings cards -->
+
+			<div class="rings flex items-center overflow-x-scroll gap-x-2">
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"> <img class="rounded-t-lg" src="../images/ring_1.png" alt="" /></a>
+						<div class="text">
+							<h5 class="mb-2 text-2xl font-bold price">1 390 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 4 600 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="#" class="font-normal text">
+								Золотое кольцо с изумрудом и бриллиантами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_2.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 290 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 4 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с гранатом и бриллиантами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_3.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 190 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 900 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_4.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">990 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_4.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">990 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- more button -->
+
+			<div class="container mx-auto flex justify-center mt-5">
+				<a href="#" class="more flex items-center gap-3 justify-center"
+					><p>Больше предложений</p>
+					<img src="../images/more.svg" alt=""
+				/></a>
+			</div>
+		</div>
+
+		<!-- finish first section rings -->
+
+		<!-- start second section rings -->
+
+		<div class="container mx-auto second_section">
+			<!-- title -->
+
+			<div class="title">
+				<h1>Серьги</h1>
+			</div>
+			<!-- rings cards -->
+
+			<div class="rings flex items-center overflow-x-scroll gap-x-2">
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"> <img class="rounded-t-lg" src="../images/ring_1.png" alt="" /></a>
+						<div class="text">
+							<h5 class="mb-2 text-2xl font-bold price">1 390 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 4 600 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="#" class="font-normal text">
+								Золотое кольцо с изумрудом и бриллиантами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_2.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 290 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 4 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с гранатом и бриллиантами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_3.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 190 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 900 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_4.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">990 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_4.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">990 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- more button -->
+
+			<div class="container mx-auto flex justify-center mt-5">
+				<a href="#" class="more flex items-center gap-3 justify-center"
+					><p>Больше предложений</p>
+					<img src="../images/more.svg" alt=""
+				/></a>
+			</div>
+		</div>
+
+		<!-- finish second section rings -->
+
+		<!-- start third section  -->
+
+		<div class="container mx-auto third_section">
+			<!-- title -->
+
+			<div class="title">
+				<h1>Категория 3</h1>
+			</div>
+			<!-- rings cards -->
+
+			<div class="rings flex items-center overflow-x-scroll gap-x-2">
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"> <img class="rounded-t-lg" src="../images/ring_1.png" alt="" /></a>
+						<div class="text">
+							<h5 class="mb-2 text-2xl font-bold price">1 390 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 4 600 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="#" class="font-normal text">
+								Золотое кольцо с изумрудом и бриллиантами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_2.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 290 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 4 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с гранатом и бриллиантами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_3.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 190 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 900 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_4.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">990 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/ring_4.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">990 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- more button -->
+
+			<div class="container mx-auto flex justify-center mt-5">
+				<a href="#" class="more flex items-center gap-3 justify-center"
+					><p>Больше предложений</p>
+					<img src="../images/more.svg" alt=""
+				/></a>
+			</div>
+		</div>
+
+		<!-- finish third section  -->
+
+		<!-- start fourth section  -->
+
+		<div class="container mx-auto fourth_section">
+			<!-- title -->
+
+			<div class="title">
+				<h1>Категория 4</h1>
+			</div>
+			<!-- rings cards -->
+
+			<div class="rings flex items-center overflow-x-scroll gap-x-2">
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"> <img class="rounded-t-lg" src="../images/no_photo.png" alt="" /></a>
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 390 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 4 600 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="#" class="font-normal text">
+								Золотое кольцо с изумрудом и бриллиантами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/no_photo.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 290 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 4 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с гранатом и бриллиантами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/no_photo.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">1 190 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 900 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/no_photo.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">990 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white">
+					<div class="card">
+						<a href="#"><img class="rounded-t-lg" src="../images/no_photo.png" alt="" /></a>
+
+						<div class="info">
+							<h5 class="mb-2 text-2xl font-bold price">990 000 som</h5>
+							<p class="mb-2 font-normal persent link flex gap-2">
+								<del class="mb-1 font-normal"> 3 400 000 som </del>
+								<span>-70%</span>
+							</p>
+							<a href="" class="font-normal text">
+								Золотое кольцо с топазом Sky и фианитами с родированием
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- more button -->
+
+			<div class="container mx-auto flex justify-center mt-5">
+				<a href="#" class="more flex items-center gap-3 justify-center"
+					><p>Больше предложений</p>
+					<img src="../images/more.svg" alt=""
+				/></a>
+			</div>
+		</div>
+		<!-- finish fourth section  -->
+
+		<div class="footer container mx-auto md:hidden flex items-center justify-between px-6">
+			<a href="#" class="home flex flex-col items-center gap-1">
+				<span
+					><svg
+						width="25"
+						height="24"
+						viewBox="0 0 25 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2.75 12.0001L11.704 3.04507C12.144 2.60607 12.856 2.60607 13.295 3.04507L22.25 12.0001M5 9.75007V19.8751C5 20.4961 5.504 21.0001 6.125 21.0001H10.25V16.1251C10.25 15.5041 10.754 15.0001 11.375 15.0001H13.625C14.246 15.0001 14.75 15.5041 14.75 16.1251V21.0001H18.875C19.496 21.0001 20 20.4961 20 19.8751V9.75007M8.75 21.0001H17"
+							stroke="#8C8C8C"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</span>
+				<p>Главная</p>
+			</a>
+			<a href="#" class="catalog flex flex-col items-center gap-1">
+				<span
+					><svg
+						width="25"
+						height="24"
+						viewBox="0 0 25 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M22.6667 21L19.2022 17.5355M19.2022 17.5355C20.1399 16.5978 20.6667 15.326 20.6667 14C20.6667 12.6739 20.1399 11.4021 19.2022 10.4645C18.2645 9.52678 16.9928 9 15.6667 9C14.3406 9 13.0689 9.52678 12.1312 10.4645C11.1935 11.4021 10.6667 12.6739 10.6667 14C10.6667 15.326 11.1935 16.5978 12.1312 17.5355C13.0689 18.4732 14.3406 18.9999 15.6667 18.9999C16.9928 18.9999 18.2645 18.4732 19.2022 17.5355Z"
+							stroke="#AFAFAF"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M3.66675 5H20.6667M3.66675 11H7.16675M3.66675 17H7.66675"
+							stroke="#AFAFAF"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</span>
+				<p>Каталог</p>
+			</a>
+			<a href="#" class="basket flex flex-col items-center gap-1">
+				<span
+					><svg
+						width="25"
+						height="24"
+						viewBox="0 0 25 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M2.58325 3H3.96925C4.47925 3 4.92425 3.343 5.05625 3.835L5.43925 5.272M5.43925 5.272C11.0099 5.11589 16.5752 5.73515 21.9753 7.112C21.1513 9.566 20.1723 11.95 19.0513 14.25H7.83325M5.43925 5.272L7.83325 14.25M7.83325 14.25C7.0376 14.25 6.27454 14.5661 5.71193 15.1287C5.14932 15.6913 4.83325 16.4544 4.83325 17.25H20.5833M6.33325 20.25C6.33325 20.4489 6.25423 20.6397 6.11358 20.7803C5.97293 20.921 5.78216 21 5.58325 21C5.38434 21 5.19357 20.921 5.05292 20.7803C4.91227 20.6397 4.83325 20.4489 4.83325 20.25C4.83325 20.0511 4.91227 19.8603 5.05292 19.7197C5.19357 19.579 5.38434 19.5 5.58325 19.5C5.78216 19.5 5.97293 19.579 6.11358 19.7197C6.25423 19.8603 6.33325 20.0511 6.33325 20.25ZM19.0833 20.25C19.0833 20.4489 19.0042 20.6397 18.8636 20.7803C18.7229 20.921 18.5322 21 18.3333 21C18.1343 21 17.9436 20.921 17.8029 20.7803C17.6623 20.6397 17.5833 20.4489 17.5833 20.25C17.5833 20.0511 17.6623 19.8603 17.8029 19.7197C17.9436 19.579 18.1343 19.5 18.3333 19.5C18.5322 19.5 18.7229 19.579 18.8636 19.7197C19.0042 19.8603 19.0833 20.0511 19.0833 20.25Z"
+							stroke="#AFAFAF"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</span>
+				<p>Корзина</p>
+			</a>
+			<a href="#" class="cabinet flex flex-col items-center gap-1">
+				<span
+					><svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M17.982 18.7249C17.2833 17.7998 16.3793 17.0496 15.3412 16.5333C14.3031 16.0171 13.1594 15.7489 12 15.7499C10.8407 15.7489 9.6969 16.0171 8.65883 16.5333C7.62077 17.0496 6.71675 17.7998 6.01801 18.7249M17.982 18.7249C19.3455 17.5121 20.3071 15.9135 20.7412 14.141C21.1753 12.3686 21.0603 10.506 20.4115 8.80043C19.7627 7.09482 18.6107 5.62673 17.1084 4.59085C15.6061 3.55497 13.8244 3.00024 11.9995 3.00024C10.1747 3.00024 8.39295 3.55497 6.89062 4.59085C5.38829 5.62673 4.23634 7.09482 3.58755 8.80043C2.93875 10.506 2.82376 12.3686 3.25783 14.141C3.6919 15.9135 4.65451 17.5121 6.01801 18.7249M17.982 18.7249C16.336 20.1931 14.2056 21.0031 12 20.9999C9.79404 21.0033 7.66425 20.1934 6.01801 18.7249M15 9.74995C15 10.5456 14.6839 11.3087 14.1213 11.8713C13.5587 12.4339 12.7957 12.7499 12 12.7499C11.2044 12.7499 10.4413 12.4339 9.87869 11.8713C9.31608 11.3087 9.00001 10.5456 9.00001 9.74995C9.00001 8.9543 9.31608 8.19124 9.87869 7.62863C10.4413 7.06602 11.2044 6.74995 12 6.74995C12.7957 6.74995 13.5587 7.06602 14.1213 7.62863C14.6839 8.19124 15 8.9543 15 9.74995Z"
+							stroke="#AFAFAF"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</span>
+				<p>Кабинет</p>
+			</a>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>

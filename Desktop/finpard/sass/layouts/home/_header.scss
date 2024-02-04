@@ -1,0 +1,36 @@
+.btn_group {
+	button {
+		width: auto;
+		height: 45px;
+		border-radius: 25px;
+		padding: 0 20px;
+		border: 1px solid #dbdbe0;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
+	// @media (max-width: 640px) {
+	// 	button {
+	// 		width: auto;
+	// 		height: 45px;
+	// 		font-size: 14px;
+	// 	}
+	// }
+}
+
+.header {
+	img {
+		width: 1540px;
+		height: auto;
+		border-radius: 12px;
+	}
+
+	@media (max-width: 640px) {
+		border-bottom-right-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+}

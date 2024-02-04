@@ -1,0 +1,25 @@
+body {
+	font-family: "Inter";
+	padding-bottom: 40px;
+}
+@media (max-width: 640px) {
+	body {
+		background-color: #f1f2f0;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+
+a:hover {
+	color: #07a461;
+}
+
+a:hover path {
+	stroke: #07a461;
+}
+
+button:hover {
+	color: white;
+	background-color: #07a461;
+}
