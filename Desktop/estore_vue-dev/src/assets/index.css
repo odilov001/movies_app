@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #07a461;
+  border-radius: 10px;
+}
+
+.collapse {
+  visibility: visible;
+}
+
+body {
+  width: 100% !important;
+  min-height: 100vh;
+  font-family: 'Inter';
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-color: #f2f2f7;
+  }
+}
+
+a:hover {
+  color: #07a461;
+}
+
+a:hover path {
+  stroke: #07a461;
+}
+
+.connect_us a:hover path {
+  fill: #07a461;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  border: 1px solid #07a461;
+}
+input:hover {
+  border: 1px solid #07a461;
+}
+
+br {
+  display: none;
+}

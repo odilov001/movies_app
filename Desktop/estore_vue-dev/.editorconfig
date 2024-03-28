@@ -1,0 +1,23 @@
+# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+# http://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Set default charset
+[*.{js,jsx,ts,tsx,vue}]
+charset = utf-8
+
+# Use 2 spaces for indentation in JavaScript and TypeScript files
+[*.{js,jsx,ts,tsx,vue}]
+indent_style = space
+indent_size = 2
+
+# ...
+# Add more configurations as needed
