@@ -22,16 +22,7 @@
           class="flex md:flex-row flex-col md:gap-20 gap-5 items-center"
           :class="product.images ? 'mt-5' : ''"
         >
-          <div class="flex md:flex-col flex-row md:gap-10 gap-10">
-            <img
-              v-for="(img, idx) in product.images"
-              :key="img"
-              class="!w-[100px] !h-[100px] cursor-pointer"
-              :src="'https://cdn.s3.finpard.io/' + img"
-              @click="setMainImage(idx)"
-              alt=""
-            />
-          </div>
+          <div class="flex md:flex-col flex-row md:gap-10 gap-10"></div>
           <div class="main_img">
             <img
               class="!w-[400px] !h-[400px]"
@@ -48,28 +39,63 @@
           <h2>{{ formatPrice(+product.price) }} {{ product.currency }}</h2>
           <p class="data" v-if="product.sku !== '0'">Арт. {{ product.sku }}</p>
         </div>
-        <div class="product_sizes flex flex-col gap-3 bg-white" v-for="(variant, idx) in variants">
-          <p>{{ variants[0].type }}</p>
-          <div :key="`variant-${idx}`" class="sizes flex items-center flex-wrap gap-2">
-            <a
-              class="size"
-              v-for="(item, index) in variant.items"
-              :key="`item-${index}`"
-              :href="`/product/${item.slug}?activeItem=${item.slug}`"
-              :class="{ active: activeSlug === item.slug }"
-            >
-              {{ item.title }}
-            </a>
-          </div>
-        </div>
+
         <div class="px-5 basket_btn">
           <RouterLink to="#" class="add_product grid place-items-center" @click.prevent="addToCart">
             Добавить в корзину
           </RouterLink>
         </div>
-        <div class="description flex flex-col gap-3 bg-white">
+        <div class="description flex flex-col gap-3 bg-white rounded-[25px]">
           <h4>Описание:</h4>
           <p v-html="product.description"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-3 md:ml-[200px] md:p-0 p-5 bg-white mt-3 rounded-[25px]">
+      <div class="flex gap-2 min-w-[300px]">
+        <img
+          class="!w-[123px] !h-[123px] cursor-pointer"
+          src="https://cdn.s3.finpard.io/media/product_images/9Je1QHBvmwWa_slFc4_JAQKKk5lKjB.webp"
+          alt=""
+        />
+        <div class="flex flex-col gap-3">
+          <h2 class="text-[25px] font-[500]">Sirg'a</h2>
+          <p>Размер: <b>17.7 </b></p>
+          <p>Вес: <b>2.32</b></p>
+          <p>
+            цена: <b>{{ formatPrice(2000000) }}</b>
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-2 min-w-[300px]">
+        <img
+          class="!w-[123px] !h-[123px] cursor-pointer"
+          src="https://cdn.s3.finpard.io/media/product_images/9Je1QHBvmwWa_slFc4_JAQKKk5lKjB.webp"
+          alt=""
+        />
+        <div class="flex flex-col gap-3">
+          <h2 class="text-[25px] font-[500]">Sirg'a</h2>
+          <p>Размер: <b>17.7 </b></p>
+          <p>Вес: <b>2.32</b></p>
+          <p>
+            цена: <b>{{ formatPrice(2000000) }}</b>
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-2 min-w-[300px]">
+        <img
+          class="!w-[123px] !h-[123px] cursor-pointer"
+          src="https://cdn.s3.finpard.io/media/product_images/9Je1QHBvmwWa_slFc4_JAQKKk5lKjB.webp"
+          alt=""
+        />
+        <div class="flex flex-col gap-3">
+          <h2 class="text-[25px] font-[500]">Sirg'a</h2>
+          <p>Размер: <b>17.7 </b></p>
+          <p>Вес: <b>2.32</b></p>
+          <p>
+            цена: <b>{{ formatPrice(2000000) }}</b>
+          </p>
         </div>
       </div>
     </div>
@@ -92,6 +118,7 @@ import FooterInfo from '@/components/FooterInfo.vue'
 import Loader from '@/components/Loader.vue'
 import { ESTORE_URL } from '../stores/store.js'
 import { message } from 'ant-design-vue'
+
 // import { userRouter } from 'vue-router'
 
 import images from './images'

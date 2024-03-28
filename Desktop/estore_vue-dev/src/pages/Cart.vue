@@ -69,7 +69,8 @@
                     ></p> -->
 
                     <span
-                      >Размер : <span class="font-bold"> {{ detail.selectedItem.title }}</span>
+                      >{{ detail.selectedVariantType }} :
+                      <span class="font-bold"> {{ detail.selectedItem.title }}</span>
                     </span>
                     <div>
                       <!-- <p class="mb-2 font-normal persent link flex gap-2">

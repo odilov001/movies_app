@@ -10,7 +10,10 @@
   background-color: #07a461;
   border-radius: 10px;
 }
-
+::selection {
+  color: white;
+  background: #07a461;
+}
 .collapse {
   visibility: visible;
 }

@@ -3,6 +3,7 @@ import Home from '@/pages/Home.vue'
 import Products from '@/pages/Products.vue'
 import SingleProduct from '@/pages/SingleProduct.vue'
 import Cart from '@/pages/Cart.vue'
+import Sets from '@/pages/Sets.vue'
 
 //Profile routes
 
@@ -49,6 +50,12 @@ const router = createRouter({
       path: '/cart',
       name: 'cart',
       component: Cart
+    },
+    {
+      path: '/product/sets/:slug/',
+      name: 'sets',
+      component: Sets,
+      props: true
     },
 
     // PROFILE ROUTER
